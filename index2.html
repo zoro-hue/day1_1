@@ -1,91 +1,100 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jayanth Jagu - Curriculum Vitae</title>
+<title>Jayanth Jagu - CV</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#f4f4f4;
-    color:#333;
+    background:#f2f2f2;
+    color:#222;
+    padding:30px;
     line-height:1.6;
 }
 
 .container{
-    width:80%;
-    max-width:1000px;
-    margin:30px auto;
-    background:#fff;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    max-width:900px;
+    margin:auto;
+    background:#ffffff;
+    padding:40px;
+    border-radius:4px;
+    box-shadow:0 0 12px rgba(0,0,0,0.08);
 }
 
 header{
     text-align:center;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 
 header h1{
-    color:#0d47a1;
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.contact{
+    font-size:14px;
 }
 
 .contact a{
+    color:#222;
     text-decoration:none;
-    color:#1565c0;
 }
 
-section{
+.contact a:hover{
+    text-decoration:underline;
+}
+
+h2{
     margin-top:25px;
-}
-
-.section-title{
-    color:#0d47a1;
-    border-bottom:2px solid #0d47a1;
-    padding-bottom:5px;
     margin-bottom:10px;
+    font-size:20px;
+    border-bottom:1px solid #ccc;
+    padding-bottom:5px;
 }
 
-.job-title{
-    font-weight:bold;
-    font-size:18px;
+h3{
+    margin-top:12px;
+    font-size:17px;
 }
 
-.company{
-    color:#666;
+.role{
     font-style:italic;
+    color:#555;
 }
 
 ul{
     margin-left:20px;
+    margin-bottom:10px;
 }
 
-.skills span{
-    display:inline-block;
-    background:#e3f2fd;
-    color:#0d47a1;
-    padding:6px 12px;
-    margin:5px;
-    border-radius:20px;
+li{
+    margin-bottom:4px;
 }
 
-footer{
-    text-align:center;
-    margin-top:20px;
-    color:#666;
+p{
+    margin-bottom:5px;
+}
+
+@media(max-width:768px){
+    body{
+        padding:10px;
+    }
+
+    .container{
+        padding:20px;
+    }
 }
 </style>
-
 </head>
+
 <body>
 
 <div class="container">
@@ -94,120 +103,89 @@ footer{
     <h1>Jayanth Jagu</h1>
 
     <div class="contact">
-        📞 +91-8309201398 |
-        📧 <a href="mailto:jagujayanth6@gmail.com">jagujayanth6@gmail.com</a> |
-        🔗 <a href="https://github.com/zoro-hue" target="_blank">GitHub</a> |
-        🔗 <a href="https://linkedin.com/in/jayanth-jagu" target="_blank">LinkedIn</a>
+        +91-8309201398 |
+        <a href="mailto:jagujayanth6@gmail.com">jagujayanth6@gmail.com</a> |
+        <a href="https://github.com/zoro-hue" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/jayanth-jagu" target="_blank">LinkedIn</a>
     </div>
 </header>
 
-<section>
-    <h2 class="section-title">Professional Summary</h2>
-    <p>
-        Computer Science Engineering student with strong foundations in
-        Data Structures, Algorithms, AI/ML, Full-Stack Development, and Cyber Security.
-        Experienced in building AI-powered applications, predictive analytics systems,
-        computer vision solutions, and modern web applications.
-    </p>
-</section>
+<h2>Professional Summary</h2>
+<p>
+Computer Science Engineering student with strong foundations in
+Data Structures, Algorithms, Artificial Intelligence, Machine Learning,
+Cyber Security, and Full Stack Development. Experienced in developing
+AI-powered applications, predictive analytics systems, computer vision
+solutions, and modern web applications.
+</p>
 
-<section>
-    <h2 class="section-title">Experience</h2>
+<h2>Experience</h2>
 
-    <div class="job-title">AIML Intern</div>
-    <div class="company">Edubot | June 2025 – Aug 2025</div>
-    <ul>
-        <li>Built a hospital readmission prediction model using Python and Scikit-learn.</li>
-        <li>Performed feature engineering and hyperparameter tuning.</li>
-        <li>Generated healthcare insights through data analysis.</li>
-    </ul>
+<h3>Edubot</h3>
+<p class="role">AIML Intern | June 2025 – Aug 2025</p>
+<ul>
+    <li>Built a hospital readmission prediction model using Python and Scikit-learn.</li>
+    <li>Performed feature engineering and hyperparameter tuning.</li>
+    <li>Generated actionable insights from healthcare data.</li>
+</ul>
 
-    <br>
+<h3>Edunet Foundation</h3>
+<p class="role">Cyber Security Intern | May 2024 – July 2024</p>
+<ul>
+    <li>Implemented LSB-based image steganography for secure data hiding.</li>
+    <li>Integrated encryption techniques and improved security.</li>
+    <li>Enhanced resistance against steganalysis attacks.</li>
+</ul>
 
-    <div class="job-title">Cyber Security Intern</div>
-    <div class="company">Edunet Foundation | May 2024 – July 2024</div>
-    <ul>
-        <li>Developed LSB-based image steganography system.</li>
-        <li>Integrated encryption techniques for secure communication.</li>
-        <li>Improved resistance against steganalysis attacks.</li>
-    </ul>
-</section>
+<h2>Projects</h2>
 
-<section>
-    <h2 class="section-title">Projects</h2>
+<h3>Railway Management System</h3>
+<ul>
+    <li>Built using Next.js, TypeScript, Supabase, and Groq AI APIs.</li>
+    <li>Implemented ticket booking, delay prediction, predictive maintenance alerts, and analytics dashboard.</li>
+</ul>
 
-    <div class="job-title">Railway Management System</div>
-    <ul>
-        <li>Built using Next.js, TypeScript, Supabase, and Groq AI APIs.</li>
-        <li>Implemented ticket booking, delay prediction, predictive maintenance alerts, and analytics dashboard.</li>
-    </ul>
+<h3>AI Smart Surveillance</h3>
+<ul>
+    <li>Developed a real-time anomaly detection system using OpenCV and object detection models.</li>
+    <li>Integrated automated alerts and monitoring dashboard.</li>
+</ul>
 
-    <br>
+<h3>Persona-Driven Document Intelligence</h3>
+<ul>
+    <li>Developed a persona-based document ranking system using PyMuPDF and TF-IDF similarity scoring.</li>
+    <li>Implemented contextual relevance and semantic ranking algorithms.</li>
+</ul>
 
-    <div class="job-title">AI Smart Surveillance</div>
-    <ul>
-        <li>Developed real-time anomaly detection using OpenCV and object detection models.</li>
-        <li>Integrated automated alerts and monitoring dashboard.</li>
-    </ul>
+<h2>Education</h2>
 
-    <br>
+<h3>SRM Institute of Science and Technology</h3>
+<p>B.Tech in Computer Science and Engineering | 2023 – 2027</p>
+<p>Andhra Pradesh, India</p>
 
-    <div class="job-title">Persona-Driven Document Intelligence</div>
-    <ul>
-        <li>Built persona-based document ranking using TF-IDF and PyMuPDF.</li>
-        <li>Implemented contextual relevance scoring and semantic ranking.</li>
-    </ul>
-</section>
+<ul>
+    <li>Coursework: DSA, DBMS, Operating Systems, Computer Networks, AI, Machine Learning.</li>
+    <li>Pothole Detection & 3D Reconstruction using CNNs.</li>
+    <li>PPE Detection using CNNs in collaboration with UTP Malaysia.</li>
+</ul>
 
-<section>
-    <h2 class="section-title">Education</h2>
+<h2>Technical Skills</h2>
 
-    <div class="job-title">B.Tech - Computer Science and Engineering</div>
-    <div class="company">SRM Institute of Science and Technology | 2023 – 2027</div>
+<ul>
+    <li><strong>Languages:</strong> Python, Java, C, C++, JavaScript, SQL</li>
+    <li><strong>Frontend:</strong> HTML, CSS, React.js</li>
+    <li><strong>Backend:</strong> Node.js</li>
+    <li><strong>Databases:</strong> MySQL, Supabase</li>
+    <li><strong>Tools:</strong> Git, GitHub, Jupyter Notebook, Google Colab, Figma, Notion, Miro, Google Analytics</li>
+</ul>
 
-    <ul>
-        <li>Coursework: DSA, DBMS, Operating Systems, Computer Networks, AI, Machine Learning.</li>
-        <li>Research:
-            Pothole Detection & 3D Reconstruction using CNNs,
-            PPE Detection using CNNs with UTP Malaysia.
-        </li>
-    </ul>
-</section>
+<h2>Certifications</h2>
 
-<section>
-    <h2 class="section-title">Technical Skills</h2>
-
-    <div class="skills">
-        <span>Python</span>
-        <span>Java</span>
-        <span>C</span>
-        <span>C++</span>
-        <span>JavaScript</span>
-        <span>React.js</span>
-        <span>Node.js</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>SQL</span>
-        <span>GitHub</span>
-        <span>Supabase</span>
-        <span>Groq API</span>
-    </div>
-</section>
-
-<section>
-    <h2 class="section-title">Certifications</h2>
-
-    <ul>
-        <li>Oracle Certified Professional: Java SE 17 Developer</li>
-    </ul>
-</section>
-
-<footer>
-    © 2026 Jayanth Jagu
-</footer>
+<ul>
+    <li>Oracle Certified Professional: Java SE 17 Developer</li>
+</ul>
 
 </div>
 
 </body>
 </html>
-```
